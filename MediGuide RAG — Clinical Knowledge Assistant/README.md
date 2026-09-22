@@ -126,17 +126,19 @@ MediGuideRAG/
 ├── .env
 ├── .gitignore
 └── README.md
+
 📌 File Responsibilities
-File	Responsibility
-config.py	Common project paths and configuration
+File	           Responsibility
+config.py	          Common project paths and configuration
 document_loader.py	Loads PDFs and creates chunks
 vector_store.py	Creates embeddings and stores them in FAISS
 retriever.py	Retrieves relevant chunks for a user query
 rag_chain.py	Combines retrieved context with the query and generates the answer
-app.py	Streamlit user interface
+app.py	          Streamlit user interface
 documents/	Healthcare PDF knowledge base
-store/	FAISS index and stored document chunks
-.env	API keys and environment configuration
+store/	          FAISS index and stored document chunks
+.env	          API keys and environment configuration
+
 🛠️ Technologies Used
 Python
 LangChain
@@ -147,21 +149,22 @@ Groq
 Streamlit
 PyPDF
 python-dotenv
+
 ⚙️ Setup
 1. Clone the repository
 git clone <your-repository-url>
 cd MediGuideRAG
+
 2. Create the environment
 uv venv
-
 Activate the environment or use uv run directly.
 
 3. Install dependencies
 uv pip install -r requirements.txt
+
 4. Configure environment variables
 
 Create a .env file:
-
 GROQ_API_KEY=your_groq_api_key
 MODEL_NAME=openai/gpt-oss-120b
 
@@ -171,7 +174,6 @@ Do not commit the .env file to GitHub.
 Step 1 — Build the Vector Store
 
 Run the ingestion pipeline:
-
 uv run python -m ingestion.vector_store
 
 This performs:
@@ -191,6 +193,7 @@ It generates:
 store/
 ├── faiss_index
 └── chunks.pkl
+
 Step 2 — Start Streamlit
 uv run streamlit run app.py
 
