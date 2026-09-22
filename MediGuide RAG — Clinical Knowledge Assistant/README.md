@@ -140,15 +140,15 @@ store/	          FAISS index and stored document chunks
 .env	          API keys and environment configuration
 
 🛠️ Technologies Used
-Python
-LangChain
-LangChain Community
-Sentence Transformers
-FAISS
-Groq
-Streamlit
-PyPDF
-python-dotenv
+> Python
+> LangChain
+> LangChain Community
+> Sentence Transformers
+> FAISS
+> Groq
+> Streamlit
+> PyPDF
+> python-dotenv
 
 ⚙️ Setup
 1. Clone the repository
@@ -203,9 +203,9 @@ Open the local Streamlit URL displayed in the terminal.
 
 Try questions such as:
 
-What are the risk factors for Type 2 diabetes?
-How is Type 2 diabetes diagnosed?
-What lifestyle interventions are recommended for diabetes?
+Q. What are the risk factors for Type 2 diabetes?
+Q. How is Type 2 diabetes diagnosed?
+Q. What lifestyle interventions are recommended for diabetes?
 
 The application retrieves relevant information from the clinical knowledge base and generates a grounded response.
 
